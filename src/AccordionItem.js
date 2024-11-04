@@ -1,11 +1,12 @@
 import "./AccordionItem.css"
 import {useState} from "react";
 
-function AccordionItem({text, title, num}) {
+function AccordionItem({text, title, num,currentOpen,onOpen}) {
 
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
+    const isOpen=num===currentOpen;
     const handleToggle = () => {
-        setIsOpen(isOpen => !isOpen);
+        onOpen(num);
     }
     return (
         <div className="accordion">

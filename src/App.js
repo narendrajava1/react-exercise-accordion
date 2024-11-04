@@ -1,10 +1,13 @@
 import Step from "./steps/Step";
+import Accordion from "./Accordion";
 
 function App() {
 
-    return(
+    return (
         <>
-        <Step/>
+            {/*To enable Step Component remove the comment at step*/}
+            {/*<Step/>*/}
+            <Accordion/>
         </>
     )
 
