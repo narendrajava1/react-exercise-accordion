@@ -1,14 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-import Accordion from "./Accordion";
+import Step from "./steps/Step";
 
 function App() {
 
-  return (
-    <div>
-      <Accordion/>
-    </div>
-  );
+    return(
+        <>
+        <Step/>
+        </>
+    )
+
 }
 
 export default App;
