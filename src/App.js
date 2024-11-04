@@ -5,9 +5,7 @@ function App() {
 
     return (
         <>
-            {/*To enable Step Component remove the comment at step*/}
-            {/*<Step/>*/}
-            <Accordion/>
+
         </>
     )
 
