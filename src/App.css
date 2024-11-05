@@ -1,8 +1,154 @@
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.body{*/
+/*  width: 750px;*/
+/*  margin: 0 auto;*/
+/*}*/
+.app {
+    min-height: 66vh;
+    margin: 0 auto;
+    width: 950px;
+    display: grid;
+    grid-template-columns: 34rem 44rem;
+    column-gap: 4rem;
+    align-items: start;
+    /*background-color: #eee9e9;*/
+}
+
+.sidebar {
+    overflow-y: scroll;
+    height: 350px;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.friend-box {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    column-gap: 1.6rem;
+    padding: 1.2rem;
+    transition: 0.5s;
+}
+
+.friend-box img {
+    width: 100%;
+    grid-row: span 2;
+    border-radius: 50%;
+
+}
+
+.friend-box h3 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.friend-box p {
+    grid-row: 2;
+    grid-column: 2;
 }
 
 
+.friend-box .btn {
+    grid-row: span 2;
+    grid-column: 3;
+    float: right;
+    margin-right: 16px;
 
+}
+
+.btn {
+    background-color: #e38a17;
+    color: #eee9e9;
+    padding: 10px 32px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-friend-btn {
+    grid-column: 2/1;
+    float: right;
+    margin-left: 350px;
+    margin-right: 50px;
+}
+
+.form-add-friend {
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 80px;
+    margin: 50px;
+    column-gap: 10px;
+    row-gap: 20px;
+    font-size: 18px;
+    background-color: #f6deae;
+    /*font-weight: bold;*/
+    /*display: grid;*/
+    /*align-items: center;*/
+    /*justify-content: flex-start;*/
+    /*flex-direction: column;*/
+}
+
+.form-add-friend input{
+    outline: none;
+    border: 1px solid #eee9e9;
+}
+
+.add {
+    grid-column: -3/-1;
+    width: 100%;
+    text-align: center;
+
+}
+
+.form-split-bill{
+    grid-row: 1;
+    display: grid;
+    grid-column: 2/-1;
+    grid-template-columns: auto 12rem;
+    background-color: #f6deae;
+    padding: 3.2rem 4rem;
+    row-gap: 10px;
+    align-items: center;
+    /*width: 100%;*/
+}
+.form-split-bill h2{
+    grid-column: span 3;
+    text-align: center;
+}
+.form-split-bill input,.form-split-bill select{
+    outline: none;
+    border: 1px solid #eee9e9;
+    padding: 5px;
+}
+
+.form-split-bill label{
+    grid-column: 1;
+}
+
+.form-split-bill select{
+    outline: none;
+    border: 1px solid #eee9e9;
+}
+
+.form-split-bill button{
+    grid-row: 6;
+    grid-column: -2/-1;
+    margin-left:52px ;
+}
