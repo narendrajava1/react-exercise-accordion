@@ -1,4 +1,4 @@
-import initialFriends from "./InitialFriends";
+
 import "./App.css"
 import Friend from "./Friend";
 
